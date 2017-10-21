@@ -1,4 +1,4 @@
-# rsc test
+# rsc-test
 ---
 
 ## install
