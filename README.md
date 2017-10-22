@@ -9,6 +9,14 @@ or
 
 yarn add rsc-test
 
+## Publish
+
+npm version <version>
+
+git push --follw-tags
+
+npm login -> npm run publish
+
 ## Usage
 
 rsc-test run test: run karma tests
