@@ -44,7 +44,9 @@ const complie = async function (sourceFolder, outputFolder) {
             options,
             code,
         } = transformResult;
-        return outputTransformFile(options.filename, code);
+        const { base: fileName } = path.parse(options.filename);
+        const outputFileName = path.join(outputFolder, fileName);
+        return outputTransformFile(outputFileName, code);
     });
     await Promise.all(ouputJobs);
 };
@@ -59,9 +61,10 @@ const complie = async function (sourceFolder, outputFolder) {
 const babel = async function (args) {
     const {
         base,
+        src,
         output,
     } = args;
-    const sourceFolder = path.join(base, output);
+    const sourceFolder = path.join(base, src);
     const outputFolder = path.join(base, output);
     return await complie(sourceFolder, outputFolder);
 };
