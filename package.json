@@ -28,9 +28,6 @@
         "type": "git",
         "url": "https://github.com/react-smart-component/rsc-test.git"
     },
-    "files": [
-        "lib"
-    ],
     "license": "MIT",
     "devDependencies": {
         "@types/node": "^8.0.46",
