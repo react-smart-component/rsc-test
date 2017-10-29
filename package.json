@@ -1,6 +1,6 @@
 {
     "name": "rsc-test",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A command line interface test tool for react-smart-component",
     "keywords": [
         "rsc",
